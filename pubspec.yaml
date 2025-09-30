@@ -58,6 +58,11 @@ flutter:
     - assets/images/MonsterMelon.jpg
     - assets/images/MonsterPiña.jpg
     - assets/images/MonsterBlanco.jpg
+    - assets/images/tigre1.jpg
+    - assets/images/tigre2.jpg
+    - assets/images/tigre3.jpg
+    - assets/images/tigre4.jpg
+    - assets/images/tigre5.jpg
 
 
   # The following line ensures that the Material Icons font is
