@@ -34,16 +34,17 @@ class Ejercicio3 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Ejercicio 3')),
       drawer: const DrawerPersonalizado(),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            miniatura('assets/MonsterPiña.jpg'),
-            const SizedBox(height: 10),
-            miniatura('assets/MonsterMelon.jpg'),
-            const SizedBox(height: 10),
-            miniatura('assets/MonsterBlanco.jpg'),
-          ],
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              imagenMiniatura('assets/images/MonsterBlanco.jpg'),
+              imagenMiniatura('assets/images/MonsterPiña.jpg'),
+              imagenMiniatura('assets/images/MonsterMelon.jpg'),
+            ],
+          ),
         ),
       ),
     );
