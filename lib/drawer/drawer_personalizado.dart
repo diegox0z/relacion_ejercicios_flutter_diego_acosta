@@ -14,7 +14,10 @@ class DrawerPersonalizado extends StatelessWidget {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(color: Colors.green),
-            child: Text('Menú', style: TextStyle(color: Colors.white, fontSize: 24)),
+            child: Text(
+              'Menú',
+              style: TextStyle(color: Colors.white, fontSize: 24),
+            ),
           ),
 
           //Ejercicio 1
@@ -34,9 +37,9 @@ class DrawerPersonalizado extends StatelessWidget {
               MaterialPageRoute(builder: (context) => const Ejercicio2()),
             ),
           ),
-          
+
           //Ejercicio 3
-                    ListTile(
+          ListTile(
             title: const Text('Ejercicio 3'),
             onTap: () => Navigator.push(
               context,
