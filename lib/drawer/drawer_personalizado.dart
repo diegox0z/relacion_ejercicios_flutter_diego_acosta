@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:relacion_ejercicios_flutter_diego_acosta/screens/ejercicio1.dart';
 import 'package:relacion_ejercicios_flutter_diego_acosta/screens/ejercicio2.dart';
 import 'package:relacion_ejercicios_flutter_diego_acosta/screens/ejercicio3.dart';
+import 'package:relacion_ejercicios_flutter_diego_acosta/screens/ejercicio4.dart';
+import 'package:relacion_ejercicios_flutter_diego_acosta/screens/ejercicio5.dart';
 
 class DrawerPersonalizado extends StatelessWidget {
   const DrawerPersonalizado({super.key});
@@ -44,6 +46,22 @@ class DrawerPersonalizado extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const Ejercicio3()),
+            ),
+          ),
+          //Ejercicio 4
+          ListTile(
+            title: const Text('Ejercicio 4'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ejercicio4()),
+            ),
+          ),
+          //Ejercicio 5
+          ListTile(
+            title: const Text('Ejercicio 5'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ejercicio5()),
             ),
           ),
         ],

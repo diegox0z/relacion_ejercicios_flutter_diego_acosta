@@ -4,6 +4,31 @@ import 'package:relacion_ejercicios_flutter_diego_acosta/drawer/drawer_personali
 class Ejercicio3 extends StatelessWidget {
   const Ejercicio3({super.key});
 
+  Widget imagenMiniatura(String assetPath) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      margin: const EdgeInsets.symmetric(vertical: 12),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                assetPath,
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,34 +37,12 @@ class Ejercicio3 extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Miniaturas de Imágenes',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 16),
-            Column(
-              children: [
-                Image.asset(
-                  'assets/images/MonsterPiña.jpg',
-                  width: 100,
-                  height: 100,
-                ),
-                const SizedBox(height: 10),
-                Image.asset(
-                  'assets/images/MonsterBlanco.jpg',
-                  width: 100,
-                  height: 100,
-                ),
-                const SizedBox(height: 10),
-                Image.asset(
-                  'assets/images/MonsterMelon.jpg',
-                  width: 100,
-                  height: 100,
-                ),
-              ],
-            ),
+            miniatura('assets/MonsterPiña.jpg'),
+            const SizedBox(height: 10),
+            miniatura('assets/MonsterMelon.jpg'),
+            const SizedBox(height: 10),
+            miniatura('assets/MonsterBlanco.jpg'),
           ],
         ),
       ),
