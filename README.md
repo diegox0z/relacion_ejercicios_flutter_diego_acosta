@@ -1,16 +1,19 @@
 # relacion_ejercicios_flutter_diego_acosta
 
-A new Flutter project.
+# 📱 Relación de Ejercicios Flutter — Diego Acosta
 
-## Getting Started
+Este proyecto contiene una colección de ejercicios prácticos de Flutter organizados por entregas. Cada ejercicio está accesible desde un drawer personalizado que permite navegar entre pantallas sin pasar por la pantalla de inicio.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🧾 Actividad resumen del tema 1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+La primera entrega consiste en crear una aplicación Flutter con un drawer personalizado que incluya las siguientes pantallas:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Nombre y apellidos con fuente de Google Fonts y dirección del repositorio con otra fuente
+- Imagen representativa y nombre completo debajo
+- 3 fotos en miniatura dispuestas en columnas
+- 5 iconos en forma de fila
+- 5 imágenes en forma de columna
+
+Cada pantalla está ubicada en su propio archivo dentro de la carpeta `screens/`, y el drawer está en `drawer/drawer_personalizado.dart`.
