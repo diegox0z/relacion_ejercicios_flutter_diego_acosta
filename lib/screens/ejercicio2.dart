@@ -24,7 +24,11 @@ class Ejercicio2 extends StatelessWidget {
             SizedBox(height: 20),
             Text(
               'Diego Acosta De Goñi',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.green),
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.green,
+              ),
             ),
           ],
         ),

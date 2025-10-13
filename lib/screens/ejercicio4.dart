@@ -7,7 +7,7 @@ class Ejercicio4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Iconos en Fila')),
+      appBar: AppBar(title: const Text('Ejercicio 4')),
       drawer: const DrawerPersonalizado(),
       body: Center(
         child: Padding(
